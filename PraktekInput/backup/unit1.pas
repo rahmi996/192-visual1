@@ -23,7 +23,6 @@ type
     rgJenisKelamin: TRadioGroup;
     procedure btnResetClick(Sender: TObject);
     procedure btnSimpanClick(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
 
   public
@@ -62,12 +61,6 @@ begin
 
   if(cbxIjazah.Checked) then
    memo1.Lines.Add('Ijazah ada');
-end;
-
-procedure TForm1.FormShow(Sender: TObject);
-begin
-  //btnReset.Click;
-  btnResetClick(Sender);
 end;
 
 procedure TForm1.btnResetClick(Sender: TObject);
